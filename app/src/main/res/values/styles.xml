@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="BLUE">#305DFF</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="RED">#ff21</color>
+    <color name="GREEN">#72FF27</color>
+    <style name="tema" parent="TextAppearance.Design.Tab"
+        >
+        <item name="android:textSize">10dp</item>
+    </style>
+</resources>

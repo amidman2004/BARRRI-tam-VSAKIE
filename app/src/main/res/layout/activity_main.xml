@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/WHITE"
+    >
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/appBar"
+    android:background="@color/WHITE"
+    >
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        app:tabBackground="@color/BLUE"
+        app:tabTextAppearance="@style/tema"
+        app:tabGravity="fill"
+        app:tabInlineLabel="true"
+        app:tabMode="fixed"
+        />
+</com.google.android.material.appbar.AppBarLayout>
+<androidx.viewpager.widget.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/appBar"
+    android:id="@+id/viewPager"
+    android:layout_above="@id/button"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/BLUE"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:text="Nextpage"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
